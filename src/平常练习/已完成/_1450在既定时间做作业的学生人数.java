@@ -1,4 +1,4 @@
-package 平常练习;
+package 平常练习.已完成;
 
 public class _1450在既定时间做作业的学生人数 {
     public static void main(String[] args) {
