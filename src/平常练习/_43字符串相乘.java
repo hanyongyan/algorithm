@@ -45,7 +45,7 @@ public class _43字符串相乘 {
             BigInteger temp = ansBig.add(tempAnsBig);
             // Long temp = Long.parseLong(tempAns) + Long.parseLong(ans);
             ans = String.valueOf(temp);
-            // ans = addStrings(tempAns, ans);没有使用此句是因为415题已经写过不需要反复使用，使用更简单的完成假发
+            // ans = addStrings(tempAns, ans);没有使用此句是因为415题已经写过不需要反复使用，使用更简单的完成加法
         }
         return ans;
     }
