@@ -1,4 +1,4 @@
-package 平常练习;
+package 平常练习.已完成;
 
 public class _1455检查单词是否为句中其他单词的前缀 {
     public static void main(String[] args) {
