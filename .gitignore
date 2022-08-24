@@ -1,4 +1,4 @@
 .vscode
 lib
 bin
-test.java
+src/test.java
