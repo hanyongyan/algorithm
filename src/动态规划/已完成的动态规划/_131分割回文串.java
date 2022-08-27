@@ -20,7 +20,6 @@ public class _131分割回文串 {
     // i...j是否为回文串 s.charAt(i) == s.charAt(j) && dp[i+1][j-1]
     public static List<List<String>> partition(String s) {
 
-
         int len = s.length();
         dp = new boolean[len][len];
         // 对角线都是回文串
@@ -34,7 +33,7 @@ public class _131分割回文串 {
 
         // 把所有的回文串找到
         for (int i = len - 3; i >= 0; i--) {
-            for (int j = len-1; j < len; j++) {
+            for (int j = i + 2; j < len; j++) {
                 dp[i][j] = s.charAt(i) == s.charAt(j) && dp[i + 1][j - 1];
             }
         }
