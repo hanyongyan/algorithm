@@ -1,4 +1,4 @@
-package 平常练习;
+package 平常练习.已完成;
 
 public class _283移动零 {
     public static void main(String[] args) {
@@ -11,7 +11,6 @@ public class _283移动零 {
         for (int i : res2) {
             System.out.print(i + " ");
         }
-
     }
 
     /*
