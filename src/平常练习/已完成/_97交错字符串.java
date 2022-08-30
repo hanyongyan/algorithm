@@ -1,4 +1,4 @@
-package 平常练习;
+package 平常练习.已完成;
 
 public class _97交错字符串 {
     public static void main(String[] args) {
