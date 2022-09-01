@@ -25,9 +25,9 @@ public class _518零钱兑换2 {
         // ...
         // 如看不懂 debug 一次
         for (int coin : coins) {
-        for (int i = coin; i <= amount; i++) {
-        dp[i] += dp[i - coin];
-        }
+            for (int i = coin; i <= amount; i++) {
+                dp[i] += dp[i - coin];
+            }
         }
         return dp[amount];
 
@@ -35,13 +35,13 @@ public class _518零钱兑换2 {
         // dp[0] = 1;
         // // currAmount代表当前的金额，
         // for (int currAmount = 1; currAmount <= amount; currAmount++) {
-        //     for (int coin : coins) {
-        //         // 说明从 leftAmount 金额选择 coin 就能够到达 currAmount 金额
-        //         int leftAmount = currAmount - coin;
-        //         if (leftAmount < 0 || leftAmount == Integer.MAX_VALUE)
-        //             continue;
-        //         dp[currAmount] += dp[leftAmount];
-        //     }
+        // for (int coin : coins) {
+        // // 说明从 leftAmount 金额选择 coin 就能够到达 currAmount 金额
+        // int leftAmount = currAmount - coin;
+        // if (leftAmount < 0 || leftAmount == Integer.MAX_VALUE)
+        // continue;
+        // dp[currAmount] += dp[leftAmount];
+        // }
         // }
         // return dp[amount];
     }

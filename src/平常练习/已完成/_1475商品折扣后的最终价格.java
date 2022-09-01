@@ -1,4 +1,4 @@
-package 平常练习;
+package 平常练习.已完成;
 
 public class _1475商品折扣后的最终价格 {
     public static void main(String[] args) {
