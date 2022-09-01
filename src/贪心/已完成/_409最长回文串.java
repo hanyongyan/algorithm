@@ -1,4 +1,4 @@
-package 贪心;
+package 贪心.已完成;
 
 import java.util.HashMap;
 import java.util.Map;
