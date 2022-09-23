@@ -1,7 +1,5 @@
 package 平常练习.已完成;
 
-import 平常练习.ListNode;
-
 public class _24两两交换链表中的节点 {
     public static void main(String[] args) {
         ListNode n = new ListNode(1);
