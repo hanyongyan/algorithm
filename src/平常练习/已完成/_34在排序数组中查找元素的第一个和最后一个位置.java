@@ -1,4 +1,4 @@
-package 平常练习;
+package 平常练习.已完成;
 
 public class _34在排序数组中查找元素的第一个和最后一个位置 {
     public static void main(String[] args) {
