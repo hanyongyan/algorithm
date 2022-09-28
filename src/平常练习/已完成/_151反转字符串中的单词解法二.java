@@ -1,6 +1,6 @@
-package 平常练习;
+package 平常练习.已完成;
 
-public class _151反转字符串中的单词 {
+public class _151反转字符串中的单词解法二 {
     public static void main(String[] args) {
         String s=  reverseWords("  hello world  ");
         System.out.println(s);

@@ -1,4 +1,4 @@
-package 平常练习;
+package 平常练习.已完成;
 
 public class _367有效的完全平方数 {
     public static void main(String[] args) {
