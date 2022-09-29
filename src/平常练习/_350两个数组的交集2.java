@@ -4,7 +4,10 @@ import java.util.Arrays;
 
 public class _350两个数组的交集2 {
     public static void main(String[] args) {
-        System.out.println(intersect(new int[]{4,9,5}, new int[]{9,4,9,8,4}));
+       int[] res = intersect(new int[]{4,9,5}, new int[]{9,4,9,8,4});
+       for (int i : res) {
+         System.out.println(i);  
+       }
     }
 
     // 暴力解法
@@ -29,10 +32,6 @@ public class _350两个数组的交集2 {
                 x++;
             }
         }
-        int[] res = new int[sum];
-        for (int i = 0; i < res.length; i++) {
-            res[i] = tempRes[i];
-        }
-        return res;
+        return Arrays.copyOfRange(tempRes, 0, sum);
     }
 }
