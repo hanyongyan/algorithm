@@ -1,4 +1,4 @@
-package 平常练习;
+package 平常练习.已完成;
 
 public class _1855下标中的最大距离 {
     public static void main(String[] args) {
