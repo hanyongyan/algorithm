@@ -1,6 +1,8 @@
-package 平常练习;
+package 平常练习.已完成;
 
 import java.util.List;
+
+import 平常练习.ListNode;
 
 public class _82删除排序链表中的重复元素2 {
     public static void main(String[] args) {
