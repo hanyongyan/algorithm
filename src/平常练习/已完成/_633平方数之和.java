@@ -1,4 +1,4 @@
-package 平常练习;
+package 平常练习.已完成;
 
 public class _633平方数之和 {
     public static void main(String[] args) {
