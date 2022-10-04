@@ -1,4 +1,4 @@
-package 平常练习;
+package 平常练习.已完成;
 
 public class _1539第k个缺失的正整数 {
     public static void main(String[] args) {
