@@ -51,6 +51,7 @@ public class _438找到字符串中所有字母异位词 {
             ++sCount[s.charAt(i+pLen) -'a'];  //增加滑动后最后一位的词频（以此达到滑动的效果）
     
             //判断滑动后处，是否有异位词
+            // 因为上面两句的作用是使得 i 位置对用的词频减去 1 如果两者相等 就是 i + 1 位置
             if(Arrays.equals(sCount,pCount)){
                 ans.add(i+1);
             } 
