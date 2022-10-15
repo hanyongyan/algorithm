@@ -11,6 +11,25 @@ public class _1441用栈操作构建数组 {
         }
     }
 
+    public static List<String> process(int[] target, int n) {
+        List<String> res = new ArrayList<>();
+        int pre = 0;
+        // 进行当前数字和上一个数字的对比
+        for (int cur : target) {
+            // 得到当前数字与前一个数字的差值 
+            int len = cur - pre;
+            // 当len != 1 时进行的 push and pop 操作
+            for (int i = 0; i < len - 1; i++) {
+                res.add("Push");
+                res.add("Pop");
+            }
+            // 两者之差不为 1 ，前面的是进行的 中间少的值的运算，最后进行 push 操作
+            res.add("Push");
+            pre = cur;
+        }
+        return res;
+    }
+
     public static List<String> buildArray(int[] target, int n) {
 
         List<String> res = new ArrayList<>();
