@@ -4,7 +4,7 @@ import javax.xml.transform.Templates;
 
 public class _33搜索旋转排序数组 {
     public static void main(String[] args) {
-        System.out.println(process(new int[] { 3, 1 }, 1));
+        System.out.println(process2(new int[] { 1 }, 3));
     }
 
     /*
@@ -85,10 +85,40 @@ public class _33搜索旋转排序数组 {
         return -1;
     }
 
+    // 第二次做
+    // 此办法有点麻烦
     public static int process2(int[] nums, int target) {
         int len = nums.length;
         int left = 0, right = len - 1, mid = 0;
-        
-        return -1;
+        while (left < right) {
+            mid = (left + right) / 2;
+            // 判断 0...mid 是否有序 此时是无须的状态
+            if (nums[0] > nums[mid]) {
+                right = mid;
+            }
+            // 找到旋转点 此时是数组中的最大值
+            else {
+                while (mid + 1 < len && nums[mid] < nums[mid + 1]) {
+                    mid++;
+                }
+                break;
+            }
+        }
+        // 如果目标值大于第一个值 说明在 0...mid 区间内
+        if (target >= nums[0]) {
+            for (int i = 0; i <= mid; i++) {
+                if (nums[i] == target)
+                    return i;
+            }
+            return -1;
+        }
+        // 说明在 mid+1... len - 1 区间内
+        else {
+            for (int i = mid + 1; i < len; i++) {
+                if (nums[i] == target)
+                    return i;
+            }
+            return -1;
+        }
     }
 }
