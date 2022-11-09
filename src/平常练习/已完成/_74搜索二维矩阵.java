@@ -45,4 +45,27 @@ public class _74搜索二维矩阵 {
         }
         return false;
     }
+
+    public static boolean process2(int[][] matrix, int target) {
+        int len1 = matrix.length;
+        int len2 = matrix[0].length;
+        for (int i = 0; i < len1; i++) {
+            // 如果大于当前行的最后一个就去下一行找
+            if (target > matrix[i][len2 - 1]) {
+                continue;
+            }
+            // 如果不大于当前行的最后一个，说明肯定在当前行 
+            else {
+                for (int j = 0; j < len2; j++) {
+                    // 如果在当前行找到了目标值就返回 true
+                    if(target == matrix[i][j]){
+                        return true;
+                    }
+                }
+                // 当前行内没有目标值 后面的也不会有目标值
+                return false;
+            }
+        }
+        return false;
+    }
 }

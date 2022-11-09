@@ -4,7 +4,7 @@ import javax.xml.transform.Templates;
 
 public class _33搜索旋转排序数组 {
     public static void main(String[] args) {
-        System.out.println(process(new int[]{3,1}, 1));
+        System.out.println(process(new int[] { 3, 1 }, 1));
     }
 
     /*
@@ -82,6 +82,13 @@ public class _33搜索旋转排序数组 {
                 }
             }
         }
+        return -1;
+    }
+
+    public static int process2(int[] nums, int target) {
+        int len = nums.length;
+        int left = 0, right = len - 1, mid = 0;
+        
         return -1;
     }
 }
