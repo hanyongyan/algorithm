@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class _1684统计一致字符串的数目 {
   public static void main(String[] args) {
-    System.out.println(countConsistentStrings("abc", new String[]{"a","b","c","ab","ac","bc","abc"}));
+    System.out.println(countConsistentStrings("abc", new String[] { "a", "b", "c", "ab", "ac", "bc", "abc" }));
   }
 
   public static int countConsistentStrings(String allowed, String[] words) {

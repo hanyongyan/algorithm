@@ -3,8 +3,6 @@ package 平常练习.已完成;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.hamcrest.core.Is;
-import org.hamcrest.core.IsSame;
 
 public class _205同构字符串 {
     public static void main(String[] args) {
