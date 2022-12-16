@@ -2,7 +2,7 @@ package 平常练习.已完成;
 
 public class _75颜色分类 {
     public static void main(String[] args) {
-        process2(new int[] {2, 2, 0 });
+        sortColors(new int[] {2, 2, 0 });
     }
 
     // 此题就是进行原地排序
@@ -34,37 +34,4 @@ public class _75颜色分类 {
         }
     }
 
-    public static void process2(int[] nums) {
-        int len = nums.length;
-        int redIndex = 0;
-        int blueIndex = len - 1;
-        int temp = 0;
-        for (int i = 0; i < len; i++) {
-            if (i >= blueIndex) {
-                break;
-            }
-            // 如果当前数为 0，就放到最开始的位置
-            if (nums[i] == 0) {
-                temp = nums[i];
-                nums[i] = nums[redIndex];
-                nums[redIndex] = temp;
-                redIndex++;
-            }
-            // 如果当前数为 2，就放到最后面的位置
-            else if (nums[i] == 2) {
-                temp = nums[i];
-                if(nums[blueIndex] == 0){
-                    nums[i] = nums[redIndex];
-                    nums[redIndex] = nums[blueIndex];
-                    nums[blueIndex] = temp;
-                    redIndex++;
-                }else{
-                    nums[i] = nums[blueIndex];
-                    nums[blueIndex] = temp;
-                }
-                blueIndex--;
-            }
-        }
-        System.out.println("排序完成");
-    }
 }
