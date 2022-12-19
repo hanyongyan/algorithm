@@ -6,7 +6,7 @@ import java.util.List;
 
 public class _151反转字符串中的单词 {
     public static void main(String[] args) {
-       System.out.println(reverseWords("the sky is blue"));
+        System.out.println(reverseWords("the sky is blue"));
     }
 
     /*
@@ -21,21 +21,21 @@ public class _151反转字符串中的单词 {
      *  
      */
     public static String reverseWords(String s) {
-        //将字符串根据" " 分割开来
+        // 将字符串根据" " 分割开来
         String[] strs = s.split(" ");
-        StringBuilder  res = new StringBuilder();
-        for(int i=strs.length-1;i>=0;i--){
-            //分割开来以后会存在 "" 这样的情况，需要去除
-            if(!strs[i].equals("")){
+        StringBuilder res = new StringBuilder();
+        for (int i = strs.length - 1; i >= 0; i--) {
+            // 分割开来以后会存在 "" 这样的情况，需要去除
+            if (!strs[i].equals("")) {
                 res.append(strs[i]).append(" ");
             }
         }
-        //trim 去除前导空格和尾随空格
+        // trim 去除前导空格和尾随空格
         return res.toString().trim();
 
     }
 
-    //官方题解，没有上面的执行率高
+    // 官方题解，没有上面的执行率高
     public static String reverseWords2String(String s) {
         // 除去开头和末尾的空白字符
         s = s.trim();
@@ -43,7 +43,6 @@ public class _151反转字符串中的单词 {
         List<String> wordList = Arrays.asList(s.split("\\s+"));
         Collections.reverse(wordList);
         return String.join(" ", wordList);
-        //join方法 按照list中元素的顺序 依次添加，每两次添加之间在添加一个 " "
-
+        // join方法 按照list中元素的顺序 依次添加，每两次添加之间在添加一个 " "
     }
 }
