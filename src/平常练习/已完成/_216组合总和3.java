@@ -42,6 +42,7 @@ public class _216组合总和3 {
             return;
         }
         for (int i = cur; i <= 9; i++) {
+            // 说明超出了和为 n 的限制
             if(n-i<0){
                 return;
             }
