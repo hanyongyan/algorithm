@@ -35,7 +35,9 @@ public class _513找树左下角的值 {
     }
 
     // 以下是第二中方法
+    // 记录深度
     private int Deep = -1;
+    // 记录对应的左节点的值
     private int value = 0;
     public int findBottomLeftValue2(TreeNode root) {
         value = root.val;
